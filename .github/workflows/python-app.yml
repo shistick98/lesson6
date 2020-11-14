@@ -54,3 +54,13 @@ jobs:
       with:
         push: true
         tags: shistick98/my_flask_app2:latest
+    - name: Restart service
+      uses: fifsky/ssh-action@master
+      with:
+        command: |
+          cd shesterikov
+          docker-compose pull
+          docker-compose up -d
+      host: ${{ secrets.HOST }}
+      user: root
+      pass: ${{ secrets.PRIVATE_KEY}}
