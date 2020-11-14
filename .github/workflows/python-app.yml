@@ -62,5 +62,5 @@ jobs:
           docker-compose pull
           docker-compose up -d
       host: ${{ secrets.HOST }}
-      user: root
+      user: student
       pass: ${{ secrets.PRIVATE_KEY}}
