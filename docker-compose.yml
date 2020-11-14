@@ -4,4 +4,4 @@ services:
   flask_app:
     image: shistick98/my_flask_app2
     ports:
-    - 5000:5000  
+    - 5525:5000  
