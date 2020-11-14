@@ -61,6 +61,6 @@ jobs:
           cd shesterikov
           docker-compose pull
           docker-compose up -d
-      host: ${{ secrets.HOST }}
-      user: student
-      pass: ${{ secrets.PRIVATE_KEY}}
+        host: ${{ secrets.HOST }}
+        user: student
+        pass: ${{ secrets.PRIVATE_KEY}}
